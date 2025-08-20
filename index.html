@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Flatshoe | Sepatu Wanita Elegan | Premium Comfort</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @layer components {
+            body {
+                font-family: 'Source Sans Pro', sans-serif;
+                scroll-behavior: smooth;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Lato', sans-serif;
+            }
+            .brown-gradient-bg {
+                background: linear-gradient(to right, #654321, #8b4513);
+            }
+            .brown-gradient-bg-reverse {
+                background: linear-gradient(to right, #8b4513, #654321);
+            }
+            .glassmorphism {
+                background: rgba(245, 245, 220, 0.7);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(101, 67, 33, 0.2);
+            }
+            .glassmorphism-dark {
+                background: rgba(101, 67, 33, 0.5);
+                backdrop-filter: blur(10px);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(101, 67, 33, 0.3);
+            }
+            .lightbox-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.3s ease;
+            }
+            .lightbox-overlay.active {
+                opacity: 1;
+                pointer-events: all;
+            }
+            .lightbox-content {
+                max-width: 90%;
+                max-height: 90%;
+                position: relative;
+            }
+            .close-lightbox {
+                position: absolute;
+                top: -35px;
+                right: -5px;
+                color: white;
+                font-size: 24px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#f5f5dc]">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 brown-gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://down-id.img.susercontent.com/file/b31cd64a7450b4d955a556a2b3882363" alt="Logo" class="h-12 rounded-full w-12 object-cover mr-3">
+                <h1 class="text-xl font-semibold">Flatshoe Woman</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#features" class="hover:text-[#87a96b] transition">Fitur</a>
+                <a href="#testimonials" class="hover:text-[#87a96b] transition">Testimoni</a>
+                <a href="#gallery" class="hover:text-[#87a96b] transition">Galeri</a>
+                <a href="#pricing" class="hover:text-[#87a96b] transition">Harga</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menuBtn" class="text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="absolute top-full left-0 right-0 brown-gradient-bg-reverse hidden md:hidden shadow-lg">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="#features" class="hover:text-[#87a96b] transition">Fitur</a>
+                <a href="#testimonials" class="hover:text-[#87a96b] transition">Testimoni</a>
+                <a href="#gallery" class="hover:text-[#87a96b] transition">Galeri</a>
+                <a href="#pricing" class="hover:text-[#87a96b] transition">Harga</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-lvculdc38y3j9d.webp" alt="Women's Flatshoe" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#654321aa] to-[#8b451399]"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10 py-20">
+            <div class="max-w-3xl glassmorphism rounded-2xl p-8 shadow-2xl">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#654321] mb-4">
+                            Women's Flatshoe
+                        </h1>
+                        <p class="text-[#d2691e] text-xl mb-6">
+                            Nyaman Sepanjang Hari dengan Style Elegan
+                        </p>
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="bg-[#654321] text-white px-3 py-1 rounded-lg font-bold">
+                                <span class="line-through text-gray-300">Rp 286.000</span>
+                                <span> Rp 180.000</span>
+                            </div>
+                            <div class="bg-[#d2691e] text-white px-3 py-1 rounded-lg font-bold">
+                                Diskon 37%
+                            </div>
+                        </div>
+                        <p class="mb-6 text-gray-700">
+                            Pesan sekarang dan dapatkan FREE ONGKIR ke seluruh Indonesia + Jaminan 100% uang kembali jika tidak sesuai ekspektasi
+                        </p>
+                        <div class="flex space-x-4 mt-10">
+                            <a href="#pricing" class="bg-[#d2691e] hover:bg-[#b85a1a] text-white font-bold py-3 px-8 rounded-full text-lg transition transform hover:-translate-y-1">
+                                Pesan Sekarang
+                            </a>
+                            <a href="#features" class="glassmorphism-dark text-white font-bold py-3 px-8 rounded-full text-lg border-2 border-[#7c5b38] transition">
+                                Pelajari Lebih
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center items-center">
+                        <div class="relative">
+                            <div class="absolute -inset-2 bg-[#d2691e] rounded-full blur-lg opacity-30 animate-pulse"></div>
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-lvculdc38y3j9d.webp" alt="Women's Flatshoe" class="w-full max-w-md rounded-2xl shadow-2xl relative">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 pt-6 border-t border-[#d2691e80]">
+                    <div class="text-center p-3">
+                        <div class="text-2xl text-[#d2691e] font-bold">1.000+</div>
+                        <div class="text-gray-700">Sepatu Terjual</div>
+                    </div>
+                    <div class="text-center p-3">
+                        <div class="text-2xl text-[#d2691e] font-bold">100%</div>
+                        <div class="text-gray-700">Kepuasan Pelanggan</div>
+                    </div>
+                    <div class="text-center p-3">
+                        <div class="text-2xl text-[#d2691e] font-bold">Gratis</div>
+                        <div class="text-gray-700">Ongkir Sesuai Syarat</div>
+                    </div>
+                    <div class="text-center p-3">
+                        <div class="text-2xl text-[#d2691e] font-bold">7 Hari</div>
+                        <div class="text-gray-700">Garansi Uang Kembali</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-[#f5f2e5]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#654321] mb-4">Kenapa Memilih Flatshoe Kami?</h2>
+                <p class="text-lg text-[#8b4513] max-w-2xl mx-auto">Sepatu flat dengan kenyamanan premium dan desain timeless</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg glassmorphism card-hover p-6">
+                    <div class="flex">
+                        <div class="bg-[#f5f5dc] rounded-full w-14 h-14 flex items-center justify-center mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#d2691e]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#654321]">Bahan Suede Premium</h3>
+                            <p class="mt-2 text-gray-700">Terbuat dari material suede berkualitas tinggi yang lembut dan awet</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg glassmorphism card-hover p-6">
+                    <div class="flex">
+                        <div class="bg-[#f5f5dc] rounded-full w-14 h-14 flex items-center justify-center mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#d2691e]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905a3.61 3.61 0 01-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#654321]">Nyaman Sepanjang Hari</h3>
+                            <p class="mt-2 text-gray-700">Sol yang empuk dan disain ergonomis membuat sepatu nyaman digunakan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-lg glassmorphism card-hover p-6">
+                    <div class="flex">
+                        <div class="bg-[#f5f5dc] rounded-full w-14 h-14 flex items-center justify-center mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#d2691e]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-[#654321]">Garansi Kepuasan</h3>
+                            <p class="mt-2 text-gray-700">Jaminan 7 hari pengembalian dana jika produk tidak sesuai ekspektasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <h3 class="text-2xl font-bold text-[#654321] mb-4">Ukuran Tersedia</h3>
+                <div class="flex justify-center flex-wrap gap-4 mt-6">
+                    <div class="bg-white glassmorphism rounded-xl p-4 text-center w-32 card-hover">
+                        <div class="text-lg font-bold text-[#654321]">36</div>
+                        <div class="text-gray-700">23 cm</div>
+                    </div>
+                    <div class="bg-white glassmorphism rounded-xl p-4 text-center w-32 card-hover">
+                        <div class="text-lg font-bold text-[#654321]">37</div>
+                        <div class="text-gray-700">23.5 cm</div>
+                    </div>
+                    <div class="bg-white glassmorphism rounded-xl p-4 text-center w-32 card-hover">
+                        <div class="text-lg font-bold text-[#654321]">38</div>
+                        <div class="text-gray-700">24 cm</div>
+                    </div>
+                    <div class="bg-white glassmorphism rounded-xl p-4 text-center w-32 card-hover">
+                        <div class="text-lg font-bold text-[#654321]">39</div>
+                        <div class="text-gray-700">24.5 cm</div>
+                    </div>
+                    <div class="bg-white glassmorphism rounded-xl p-4 text-center w-32 card-hover">
+                        <div class="text-lg font-bold text-[#654321]">40</div>
+                        <div class="text-gray-700">25 cm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-[#f5f0de]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#654321] mb-4">Galeri Produk</h2>
+                <p class="text-lg text-[#8b4513] max-w-2xl mx-auto">Lihat kecantikan dan detail dari setiap sudut sepatu kami</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Gallery items -->
+                <div class="gallery-item overflow-hidden rounded-2xl shadow-lg cursor-pointer card-hover bg-white">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-lvculdc38y3j9d.webp" alt="Flatshoe Gallery" class="w-full h-56 object-cover transition duration-300 transform hover:scale-110">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-2xl shadow-lg cursor-pointer card-hover bg-white">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98o-lvculdc38xs527.webp" alt="Flatshoe Gallery" class="w-full h-56 object-cover transition duration-300 transform hover:scale-110">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-2xl shadow-lg cursor-pointer card-hover bg-white">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98p-lvculdc38y6ffb.webp" alt="Flatshoe Gallery" class="w-full h-56 object-cover transition duration-300 transform hover:scale-110">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-2xl shadow-lg cursor-pointer card-hover bg-white">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-lvculdc38y3z75.webp" alt="Flatshoe Gallery" class="w-full h-56 object-cover transition duration-300 transform hover:scale-110">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-2xl shadow-lg cursor-pointer card-hover bg-white">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98p-lvculdc38yir50.webp" alt="Flatshoe Gallery" class="w-full h-56 object-cover transition duration-300 transform hover:scale-110">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-2xl shadow-lg cursor-pointer card-hover bg-white">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98z-lt0tua3wi0x37e.webp" alt="Flatshoe Gallery" class="w-full h-56 object-cover transition duration-300 transform hover:scale-110">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-2xl shadow-lg cursor-pointer card-hover bg-white">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lt0tua3wi0qca2.webp" alt="Flatshoe Gallery" class="w-full h-56 object-cover transition duration-300 transform hover:scale-110">
+                </div>
+                <div class="gallery-item overflow-hidden rounded-2xl shadow-lg cursor-pointer card-hover bg-white">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98o-lt0tua3wi0zhe9.webp" alt="Flatshoe Gallery" class="w-full h-56 object-cover transition duration-300 transform hover:scale-110">
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-white glassmorphism rounded-2xl p-6 text-center card-hover">
+                <h3 class="text-xl font-bold text-[#654321] mb-4">Lihat Sepatu dalam Aksi!</h3>
+                <video class="w-full max-w-3xl mx-auto rounded-xl shadow-lg" controls poster="https://down-id.img.susercontent.com/file/id-11134207-7r98r-lvculdc38y3j9d.webp">
+                    <source src="https://down-ws-sg.vod.susercontent.com/api/v4/11110105/mms/sg_812685cb-bd6d-46a3-a804-a2f7452dbe4a_000083.16005581753725977.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung pemutar video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-[#f5f0e1]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#654321] mb-4">Apa Kata Pelanggan Kami</h2>
+                <p class="text-lg text-[#8b4513] max-w-2xl mx-auto">Pengalaman nyata dari pembeli Women's Flatshoe</p>
+            </div>
+            
+            <div class="max-w-6xl mx-auto">
+                <div id="testimonialCarousel" class="flex overflow-hidden relative h-[450px]">
+                    <!-- Testimonial items will be added by JavaScript -->
+                </div>
+                
+                <div class="flex justify-center mt-8 space-x-2" id="testimonialDots">
+                    <!-- Dots will be added by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-[#f5f5dc]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#654321] mb-4">Dapatkan Women's Flatshoe Sekarang!</h2>
+                <div class="countdown-wrap bg-[#8b4513] text-white inline-block px-6 py-3 rounded-full mb-4">
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                        </svg>
+                        <div class="text-xl font-bold" id="countdown">00:15:00:00</div>
+                    </div>
+                </div>
+                <p class="text-lg text-[#8b4513] max-w-2xl mx-auto">Harga diskon terbatas hanya untuk periode ini</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white glassmorphism rounded-2xl p-8 text-center shadow-xl card-hover relative border-2 border-[#87a96b]">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 px-6 py-2 bg-[#87a96b] text-white rounded-full font-bold">
+                        POPULER
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#654321] mb-4">1 Pasang</h3>
+                    <div class="flex justify-center items-baseline my-6">
+                        <span class="text-xl text-gray-500 line-through mr-3">Rp 286.000</span>
+                        <span class="text-3xl font-bold text-[#d2691e]">Rp 180.000</span>
+                    </div>
+                    <ul class="space-y-3 text-left mb-8">
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#87a96b] mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            1 Pasang Women's Flatshoe Premium
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#87a96b] mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            Boks Premium Eksklusif
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#87a96b] mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                            </svg>
+                            Garansi Kepuasan 7 Hari
+                        </li>
+                    </ul>
+                    <a href="#orderForm" class="block bg-[#d2691e] hover:bg-[#b85a1a] text-white font-bold py-3 px-6 rounded-full text-lg transition transform hover:-translate-y-1">
+                        Pilih Paket Ini
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-white glassmorphism rounded-2xl p-8 shadow-xl" id="orderForm">
+                <h3 class="text-2xl font-bold text-center text-[#654321] mb-8">Form Pemesanan - Women's Flatshoe</h3>
+                
+                <!-- OrderOnline Integration -->
+                <div class="ooef max-w-2xl mx-auto">
+                    <form class="orderonline-embed-form" data-username="mila" data-product-slug="womens-flatshoes" data-product-id="68a588d0a44a8c718a067da2" id="oo-embed-form-womens-flatshoes-5345" data-origin="orderonline" style="background: linear-gradient(to bottom, #f5f5dc, #d6c9b4); padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.1); backdrop-filter: blur(10px);">
+                        <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                    </form>
+                </div>
+            </div>
+ 
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox-overlay">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img src="" alt="" id="lightboxImage" class="max-w-full max-h-full">
+        </div>
+    </div>
+
+    <!-- Social Proof Popup -->
+    <div id="socialProofPopup" class="fixed top-5 right-5 w-72 sm:w-80 bg-white rounded-lg shadow-2xl z-50 hidden transition-all duration-500 transform translate-x-full">
+        <div class="p-4 flex items-start">
+            <img src="https://i.pinimg.com/736x/43/6b/30/436b30945955ec8bea9c4a80eb486557.jpg" class="w-10 h-10 rounded-full object-cover mr-3" alt="Customer Avatar">
+            <div>
+                <div class="font-bold text-[#8b4513]">
+                    <span id="spCustomerName">Sarah</span>
+                    <span class="ml-1 text-sm font-normal text-gray-500" id="spTimeAgo">5 menit lalu</span>
+                </div>
+                <div class="text-gray-700 text-sm">
+                    baru saja memesan Women's Flatshoe
+                </div>
+                <div class="text-gray-400 text-xs mt-1">
+                    dari <span id="spCustomerCity" class="font-semibold">Jakarta</span>
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-2 right-2 w-3 h-3 animate-ping rounded-full bg-red-500"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="brown-gradient-bg py-10 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-6 md:mb-0">
+                    <img src="https://down-id.img.susercontent.com/file/b31cd64a7450b4d955a556a2b3882363" alt="Logo" class="h-10 rounded-full w-10 object-cover mr-3">
+                    <div>
+                        <div class="font-bold text-lg">Flatshoe Woman</div>
+                        <div class="text-sm text-[#f5f5dc]">Sepatu nyaman untuk wanita modern</div>
+                    </div>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-[#87a96b]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-[#87a96b]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-[#87a96b]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-[#8b4513] mt-8 pt-8 text-center text-sm text-[#f5f5dc]">
+                &copy; 2025 Flatshoe Woman. Hak Cipta Dilindungi. 
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox - Moved to bottom for easier management -->
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const menuBtn = document.getElementById('menuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Lightbox for gallery
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightboxImage');
+            const closeLightbox = document.querySelector('.close-lightbox');
+            const galleryItems = document.querySelectorAll('.gallery-item img');
+
+            galleryItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    lightboxImage.src = item.src;
+                    lightbox.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            closeLightbox.addEventListener('click', () => {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Testimonial data
+            const testimonials = [
+                {
+                    name: 'riana',
+                    rating: 5,
+                    image: 'https://i.pinimg.com/736x/85/a3/64/85a364903e1a59cfedd68e1dc32f202b.jpg',
+                    media: 'https://down-id.img.susercontent.com/file/d34f3a3073db5f3d634fe546c98e7d07.webp',
+                    content: `Sukaaaaaa, cakep warnanya😭❣️ sesuai ekspektasiku akhirnya "`,
+                    keywords: ['cakep', 'warna', 'ekspektasi']
+                },
+                {
+                    name: 'ita',
+                    rating: 5,
+                    image: 'https://i.pinimg.com/736x/04/03/c1/0403c15bbb473a3eb0e98fff4b88e0e2.jpg',
+                    media: 'https://down-id.img.susercontent.com/file/ba85aa5692248e21247e0e9e5d93f298.webp',
+                    content: `Baguss sukaa bgt yg model nya oval atas nya .. Lumayan cepet dtg nyaa terimaksih`,
+                    keywords: ['model', 'oval', 'cepat']
+                },
+                {
+                    name: 'fitri',
+                    rating: 5,
+                    image: 'https://i.pinimg.com/736x/ca/07/09/ca07097de9245bcbdd52686cd1ad932e.jpg',
+                    media: 'https://down-id.img.susercontent.com/file/id-11134103-7quky-lj0ur2ftk2frd9.webp',
+                    content: `Tampilan: bagus Warna: cantik`,
+                    keywords: ['tampilan', 'bagus', 'warna', 'cantik']
+                },
+                {
+                    name: 'vina',
+                    rating: 5,
+                    image: 'https://i.pinimg.com/736x/43/6b/30/436b30945955ec8bea9c4a80eb486557.jpg',
+                    media: 'https://down-id.img.susercontent.com/file/id-11134103-22080-6riyuxhig9fv17.webp',
+                    content: `Tampilan: kekinian Warna: warna cewe bumi`,
+                    keywords: ['tampilan', 'kekinian', 'warna', 'bumi']
+                }
+            ];
+
+            // Generate testimonial HTML
+            const testimonialCarousel = document.getElementById('testimonialCarousel');
+            const testimonialDots = document.getElementById('testimonialDots');
+            
+            testimonials.forEach((testimonial, index) => {
+                // Item container
+                const slide = document.createElement('div');
+                slide.className = 'min-w-full flex-shrink-0 flex justify-center';
+                slide.style.transition = 'transform 0.5s ease';
+                
+                // Highlight keywords
+                let contentHtml = testimonial.content;
+                testimonial.keywords.forEach(keyword => {
+                    const regex = new RegExp(keyword, 'gi');
+                    contentHtml = contentHtml.replace(regex, `<span class="text-[#d2691e] font-bold">${keyword}</span>`);
+                });
+                
+                // Card
+                slide.innerHTML = `
+                    <div class="bg-white rounded-2xl shadow-lg w-full max-w-md card-hover overflow-hidden transform hover:scale-[1.02] transition">
+                        <div class="p-5 border-b">
+                            <div class="flex items-center mb-4">
+                                <img src="${testimonial.image}" alt="${testimonial.name}" class="w-10 h-10 rounded-full object-cover mr-3">
+                                <div class="font-bold">${testimonial.name}</div>
+                            </div>
+                            <div class="flex mb-3">
+                                ${'<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z"/></svg>'.repeat(testimonial.rating)}
+                            </div>
+                            <div class="text-gray-700">
+                                ${contentHtml}
+                            </div>
+                        </div>
+                        <div class="p-3 flex justify-center">
+                            <img src="${testimonial.media}" alt="Review media" class="w-24 h-24 object-cover rounded-lg cursor-pointer testi-media" data-index="${index}" data-src="${testimonial.media}">
+                        </div>
+                    </div>
+                `;
+                
+                testimonialCarousel.appendChild(slide);
+                
+                // Dot
+                const dot = document.createElement('button');
+                dot.className = 'w-3 h-3 rounded-full bg-gray-300 hover:bg-[#8b4513] focus:outline-none transition';
+                dot.dataset.index = index;
+                testimonialDots.appendChild(dot);
+            });
+
+            // Testimonial media click
+            document.querySelectorAll('.testi-media').forEach(item => {
+                item.addEventListener('click', (e) => {
+                    const src = e.target.dataset.src;
+                    lightboxImage.src = src;
+                    lightbox.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            // Countdown timer
+            function updateCountdown() {
+                const days = Math.floor(time / (60 * 60 * 24));
+                const hours = Math.floor((time % (60 * 60 * 24)) / (60 * 60));
+                const minutes = Math.floor((time % (60 * 60)) / 60);
+                const seconds = time % 60;
+                
+                document.getElementById('countdown').textContent = 
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                time--;
+                
+                if (time < 0) time = 15 * 60 * 60; // Reset to 15 hours
+            }
+            
+            let time = 15 * 60 * 60; // 15 hours in seconds
+            
+            // Start countdown
+            setInterval(updateCountdown, 1000);
+            updateCountdown();
+            
+            // Social Proof Popup
+            const popup = document.getElementById('socialProofPopup');
+            const spCustomerName = document.getElementById('spCustomerName');
+            const spTimeAgo = document.getElementById('spTimeAgo');
+            const spCustomerCity = document.getElementById('spCustomerCity');
+            
+            const customerNames = ['Sarah', 'Maya', 'Dina', 'Fitri', 'Sari', 'Rina', 'Dewi', 'Lestari', 'Putri', 'Indira'];
+            const customerCities = ['Jakarta', 'Surabaya', 'Bandung', 'Medan', 'Bekasi', 'Tangerang', 'Depok', 'Semarang', 'Palembang', 'Makassar'];
+            
+            let popupTimeout;
+            let popupInterval;
+            
+            function showPopup() {
+                // Get random data
+                const name = customerNames[Math.floor(Math.random() * customerNames.length)];
+                const city = customerCities[Math.floor(Math.random() * customerCities.length)];
+                const minutesAgo = Math.floor(Math.random() * 15) + 1;
+                
+                // Update content
+                spCustomerName.textContent = name;
+                spCustomerCity.textContent = city;
+                spTimeAgo.textContent = `${minutesAgo} menit lalu`;
+                
+                // Position off-screen initially
+                popup.classList.remove('hidden');
+                popup.classList.remove('translate-x-full');
+                popup.classList.add('-translate-x-0');
+                
+                // Hide after 5 seconds
+                popupTimeout = setTimeout(() => {
+                    popup.classList.add('translate-x-full');
+                    popup.classList.remove('-translate-x-0');
+                }, 5000);
+            }
+            
+            function startPopupInterval() {
+                // Show first popup after 3 secs, then every 8 secs
+                setTimeout(showPopup, 3000);
+                popupInterval = setInterval(showPopup, 8000);
+            }
+            
+            // Start the system
+            startPopupInterval();
+            
+            // Pause when hovering popup
+            popup.addEventListener('mouseenter', () => {
+                clearTimeout(popupTimeout);
+                popup.classList.remove('translate-x-full');
+                popup.classList.add('-translate-x-0');
+            });
+            
+            popup.addEventListener('mouseleave', () => {
+                popupTimeout = setTimeout(() => {
+                    popup.classList.add('translate-x-full');
+                    popup.classList.remove('-translate-x-0');
+                }, 5000);
+            });
+
+            // OrderOnline embed script
+            try {
+                if (typeof xEmbedScript != 'function') {
+                    var xEmbedScript = function () {
+                        !function(w, d, e, v, id, t, s) {
+                            if (d.getElementById(id)) return;
+                            t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                            s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+                        }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                    };
+                }
+                if (typeof xEmbedInit != 'function') {
+                    var xEmbedInit = function (w, n) {
+                        if (w.ooe) return;
+                        n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+                        if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                    };
+                }
+                xEmbedInit(window); 
+                ooe('setup', 'redirect', 'https://mila.orderonline.id'); 
+                ooe('init', '5f1a7b8fa9bf807da24d83bb', '68a588d0a44a8c718a067da2', '68a588d0a44a8c718a067da3', 'oo-embed-form-womens-flatshoes-5345', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":true});
+                if (!window.jQuery) {
+                    !function(w, d, e, v, id, t, s) {
+                        if (d.getElementById(id)) return;
+                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                        t.addEventListener('load', xEmbedScript);
+                        s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+                    }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                } else {
+                    xEmbedScript();
+                }
+            } catch (e) {
+                console.log('OrderOnline integration error', e);
+            }
+        });
+    </script>
+</body>
+</html>
